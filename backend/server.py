@@ -35,8 +35,8 @@ class CommandRequest(BaseModel):
 
 class CommandResponse(BaseModel):
     response: str
-    action: str = None
-    url: str = None
+    action: Optional[str] = None
+    url: Optional[str] = None
     success: bool = True
 
 class VoiceCommand(BaseModel):
