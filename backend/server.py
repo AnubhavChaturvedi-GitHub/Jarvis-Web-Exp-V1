@@ -43,7 +43,7 @@ class VoiceCommand(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     command: str
     response: str
-    action: str = None
+    action: Optional[str] = None
     timestamp: datetime = Field(default_factory=datetime.utcnow)
 
 
